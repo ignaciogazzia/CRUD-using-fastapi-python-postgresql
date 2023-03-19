@@ -25,3 +25,33 @@
 04:37:25 PM: DEBUG [DBConnection.py:27] Connected successfully to DB: <connection object at 0x0000022D2DD6E8A0; dsn: 'user=postgres password=xxx dbname=Personas host=localhost port=5432', closed: 0>
 04:37:25 PM: DEBUG [DBConnection.py:40] Cursor opened correctly <cursor object at 0x0000022D2DDBBD80; closed: 0>
 04:37:25 PM: DEBUG [DAO_Product.py:22] [<BusinessLogic.Product.Product object at 0x0000022D2F8A60D0>, <BusinessLogic.Product.Product object at 0x0000022D2F8A6050>, <BusinessLogic.Product.Product object at 0x0000022D2F8A6290>]
+01:59:16 AM: DEBUG [DBConnection.py:27] Connected successfully to DB: <connection object at 0x0000016D32DF9CF0; dsn: 'user=postgres password=xxx dbname=Personas host=localhost port=5432', closed: 0>
+01:59:16 AM: DEBUG [DBConnection.py:40] Cursor opened correctly <cursor object at 0x0000016D32E12DC0; closed: 0>
+02:13:37 AM: DEBUG [DBConnection.py:27] Connected successfully to DB: <connection object at 0x000001ECC37EB010; dsn: 'user=postgres password=xxx dbname=Personas host=localhost port=5432', closed: 0>
+02:13:37 AM: DEBUG [DBConnection.py:40] Cursor opened correctly <cursor object at 0x000001ECC3802DC0; closed: 0>
+02:15:07 AM: DEBUG [DBConnection.py:27] Connected successfully to DB: <connection object at 0x000002128232E8A0; dsn: 'user=postgres password=xxx dbname=Personas host=localhost port=5432', closed: 0>
+02:15:07 AM: DEBUG [DBConnection.py:40] Cursor opened correctly <cursor object at 0x000002128237BA00; closed: 0>
+02:15:11 AM: DEBUG [DBConnection.py:27] Connected successfully to DB: <connection object at 0x000001C44D2FF9A0; dsn: 'user=postgres password=xxx dbname=Personas host=localhost port=5432', closed: 0>
+02:15:11 AM: DEBUG [DBConnection.py:40] Cursor opened correctly <cursor object at 0x000001C44D28B5A0; closed: 0>
+02:16:14 AM: DEBUG [DBConnection.py:27] Connected successfully to DB: <connection object at 0x0000029878ACF9A0; dsn: 'user=postgres password=xxx dbname=Personas host=localhost port=5432', closed: 0>
+02:16:14 AM: DEBUG [DBConnection.py:40] Cursor opened correctly <cursor object at 0x0000029878A5BAE0; closed: 0>
+02:20:00 AM: DEBUG [DBConnection.py:27] Connected successfully to DB: <connection object at 0x0000026C448AF9A0; dsn: 'user=postgres password=xxx dbname=Personas host=localhost port=5432', closed: 0>
+02:20:00 AM: DEBUG [DBConnection.py:40] Cursor opened correctly <cursor object at 0x0000026C4483BAE0; closed: 0>
+02:26:55 AM: DEBUG [DBConnection.py:27] Connected successfully to DB: <connection object at 0x00000165414CF9A0; dsn: 'user=postgres password=xxx dbname=Personas host=localhost port=5432', closed: 0>
+02:26:55 AM: DEBUG [DBConnection.py:40] Cursor opened correctly <cursor object at 0x000001654145BCA0; closed: 0>
+02:28:22 AM: DEBUG [DBConnection.py:27] Connected successfully to DB: <connection object at 0x000002406334F9A0; dsn: 'user=postgres password=xxx dbname=Personas host=localhost port=5432', closed: 0>
+02:28:22 AM: DEBUG [DBConnection.py:40] Cursor opened correctly <cursor object at 0x00000240632DB5A0; closed: 0>
+02:35:37 AM: DEBUG [DBConnection.py:27] Connected successfully to DB: <connection object at 0x000001CAD371FAB0; dsn: 'user=postgres password=xxx dbname=Personas host=localhost port=5432', closed: 0>
+02:35:37 AM: DEBUG [DBConnection.py:40] Cursor opened correctly <cursor object at 0x000001CAD36AB680; closed: 0>
+02:37:25 AM: DEBUG [DBConnection.py:27] Connected successfully to DB: <connection object at 0x0000021C9CFEB120; dsn: 'user=postgres password=xxx dbname=Personas host=localhost port=5432', closed: 0>
+02:37:25 AM: DEBUG [DBConnection.py:40] Cursor opened correctly <cursor object at 0x0000021C9D002DC0; closed: 0>
+02:40:49 AM: DEBUG [DBConnection.py:27] Connected successfully to DB: <connection object at 0x000001568D8EB120; dsn: 'user=postgres password=xxx dbname=Personas host=localhost port=5432', closed: 0>
+02:40:49 AM: DEBUG [DBConnection.py:40] Cursor opened correctly <cursor object at 0x000001568D902DC0; closed: 0>
+02:46:31 AM: DEBUG [DBConnection.py:27] Connected successfully to DB: <connection object at 0x00000288229DB120; dsn: 'user=postgres password=xxx dbname=Personas host=localhost port=5432', closed: 0>
+02:46:31 AM: DEBUG [DBConnection.py:40] Cursor opened correctly <cursor object at 0x00000288229F2F80; closed: 0>
+02:48:56 AM: DEBUG [DBConnection.py:27] Connected successfully to DB: <connection object at 0x0000021A88ADB120; dsn: 'user=postgres password=xxx dbname=Personas host=localhost port=5432', closed: 0>
+02:48:56 AM: DEBUG [DBConnection.py:40] Cursor opened correctly <cursor object at 0x0000021A88AF2C00; closed: 0>
+03:00:15 AM: DEBUG [DBConnection.py:27] Connected successfully to DB: <connection object at 0x0000018A7EBAB230; dsn: 'user=postgres password=xxx dbname=Personas host=localhost port=5432', closed: 0>
+03:00:15 AM: DEBUG [DBConnection.py:40] Cursor opened correctly <cursor object at 0x0000018A7EBC2F80; closed: 0>
+03:02:17 AM: DEBUG [DBConnection.py:27] Connected successfully to DB: <connection object at 0x000001C3D215B120; dsn: 'user=postgres password=xxx dbname=Personas host=localhost port=5432', closed: 0>
+03:02:17 AM: DEBUG [DBConnection.py:40] Cursor opened correctly <cursor object at 0x000001C3D2172DC0; closed: 0>

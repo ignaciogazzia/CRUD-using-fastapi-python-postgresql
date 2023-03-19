@@ -6,8 +6,8 @@ log.basicConfig(level=log.DEBUG,
                 format='%(asctime)s: %(levelname)s [%(filename)s:%(lineno)s] %(message)s', # Esto agrega el tiempo
                 datefmt='%I:%M:%S %p',
                 handlers=[
-                    log.FileHandler('C:\\Users\\Usuario\\Desktop\\ClicOH\\Programacion\\FastAPI\\Prueba-CRUD'
-                                    '\\DataLayer.log'),
+                    log.FileHandler('C:\\Users\\Usuario\\Desktop\\ClicOH\\Programacion\\FastAPI\\Prueba-CRUD\\CRUD'
+                                    '-Test\\DataLayer.log'),
                     log.StreamHandler()]
                 )
 

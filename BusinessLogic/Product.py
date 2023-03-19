@@ -1,6 +1,5 @@
 from logger import log
 
-
 class Product:
 
     def __init__(self, product_id, title, created_at):
@@ -10,6 +9,13 @@ class Product:
 
     def __str__(self):
         return f'ID {self._product_id} | TITLE: {self._title} | CREATED AT {self._created_at}  '
+
+    def to_dict(self):
+        return {
+            'id': self._product_id,
+            'title': self._title,
+            'created_at': self._created_at.strftime('%Y-%m-%d %H:%M:%S %Z%z')
+        }
 
     @property
     def product_id(self):

@@ -19,6 +19,8 @@ class ProductDAO:
 
 if __name__ == '__main__':
     productos = ProductDAO.show_products()
-    log.debug(productos)
+    for product in productos:
+        print(product.to_dict())
+    print('\nFin')
 
 
