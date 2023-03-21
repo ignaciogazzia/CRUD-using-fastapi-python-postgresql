@@ -45,6 +45,13 @@ class DBConnection:
         else:
             return cls._cursor
 
+    @property
+    def connection(self):
+        return self._connection
+
+    @classmethod
+    def commit(cls):
+        cls._connection.commit()
 
 if __name__ == "__main__":
     DBConnection.get_connection()

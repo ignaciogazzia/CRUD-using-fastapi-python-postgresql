@@ -1,8 +1,9 @@
 from logger import log
 
+
 class Product:
 
-    def __init__(self, product_id, title, created_at):
+    def __init__(self, product_id=None, title=None, created_at=None):
         self._product_id = product_id
         self._title = title
         self._created_at = created_at
@@ -27,7 +28,7 @@ class Product:
 
     @property
     def title(self):
-        return self.title
+        return self._title
 
     @title.setter
     def title(self, title):
@@ -45,4 +46,3 @@ class Product:
 if __name__ == '__main__':
     product1 = Product('1', 'Motosierra', '17/03/2023')
     log.debug(product1)
-
