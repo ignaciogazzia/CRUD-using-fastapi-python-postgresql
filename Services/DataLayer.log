@@ -1,5 +1,0 @@
-11:40:25 AM: DEBUG [DBConnection.py:27] Connected successfully to DB: <connection object at 0x000001F7D6CBA790; dsn: 'user=postgres password=xxx dbname=Personas host=localhost port=5432', closed: 0>
-11:40:43 AM: ERROR [DBConnection.py:30] Ocurrio excepcion 
-11:41:00 AM: DEBUG [DBConnection.py:27] Connected successfully to DB: <connection object at 0x000001EA504EA790; dsn: 'user=postgres password=xxx dbname=Personas host=localhost port=5432', closed: 0>
-11:43:01 AM: DEBUG [DBConnection.py:27] Connected successfully to DB: <connection object at 0x000001620945A790; dsn: 'user=postgres password=xxx dbname=Personas host=localhost port=5432', closed: 0>
-11:43:01 AM: DEBUG [DBConnection.py:40] Cursor opened correctly <cursor object at 0x00000162094A6260; closed: 0>
