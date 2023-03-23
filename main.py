@@ -1,5 +1,9 @@
+import datetime
+
 from fastapi import FastAPI
+from pydantic import BaseModel
 from DataLayer.DAO_Product import ProductDAO
+from BusinessLogic.Product import *
 
 app = FastAPI()
 
@@ -21,4 +25,9 @@ async def get_product_by_id(product_id: int):
     if product is None:
         return {}
     return product.to_dict()
+
+
+@app.put('/products/{product_id}')
+async def update_product_title(product_id: int, product: Producto):
+    return ProductDAO.update_product(product_id, product.title)
 

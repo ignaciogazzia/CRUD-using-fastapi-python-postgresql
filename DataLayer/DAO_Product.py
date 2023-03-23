@@ -1,5 +1,5 @@
 from Services.DBConnection import DBConnection
-from BusinessLogic.Product import Product
+from BusinessLogic.Product import *
 from logger import log
 
 
@@ -38,28 +38,27 @@ class ProductDAO:
     @classmethod
     def update_product(cls, product_id, new_title):
         with DBConnection.get_cursor() as cursor:
-            if ProductDAO.product_exists(product_id):
+            if ProductDAO.product_exists(product_id, cursor):
                 cursor.execute(cls._UPDATE, (new_title, product_id))
+                cursor.execute(cls._SELECT_ONE_BY_ID, (product_id,))
+                product_updated = cursor.fetchone()
                 DBConnection.commit()
                 log.debug(f'Product updated: {product_id}')
+                return Producto.to_dict(product_updated)
             else:
                 log.debug(f'Product you\'re trying to update doesnt exist: {product_id}')
+                return {}
 
     @classmethod
-    def product_exists(cls, product_id) -> bool:
+    def product_exists(cls, product_id, cursor) -> bool:
         exists = False
-        with DBConnection.get_cursor() as cursor:
-            cursor.execute(cls._SELECT_ONE_BY_ID, (product_id,))
-            if cursor.fetchone() is not None:
-                exists = True
-            return exists
+        cursor.execute(cls._SELECT_ONE_BY_ID, (product_id,))
+        if cursor.fetchone() is not None:
+            exists = True
+        return exists
 
 
 
 if __name__ == '__main__':
-    # product1 = Product(title='Vaso de plastico 3')
-    # ProductDAO.insert_product(product1)
-    product = ProductDAO.show_product(15)
+    product = ProductDAO.update_product(15,"Taza de Chocolate")
     print(product)
-    # ProductDAO.update_product(product_id=999, new_title='Motosierra PRO V2')
-    # print(ProductDAO.product_exists(9))

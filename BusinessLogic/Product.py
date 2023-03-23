@@ -1,4 +1,6 @@
+import datetime
 from logger import log
+from pydantic import BaseModel
 
 
 class Product:
@@ -41,6 +43,20 @@ class Product:
     @created_at.setter
     def created_at(self, created_at):
         self._created_at = created_at
+
+
+class Producto(BaseModel):
+    product_id: int | None = None
+    title: str
+    created_at: datetime.datetime | None = None
+
+    @classmethod
+    def to_dict(cls, product: tuple):
+        return {
+            'product_id': product[0],
+            'title': product[1],
+            'created_at': product[2].strftime('%Y-%m-%d %H:%M:%S %Z%z')
+        }
 
 
 if __name__ == '__main__':
