@@ -34,7 +34,7 @@ class DBConnection:
 
     @classmethod
     def get_cursor(cls):
-        if cls._cursor is None:
+        if cls._cursor is None or cls._cursor.closed is True:
             try:
                 cls._cursor = cls.get_connection().cursor()
                 log.debug(f'Cursor opened correctly {cls._cursor}')
@@ -45,7 +45,15 @@ class DBConnection:
         else:
             return cls._cursor
 
+    @property
+    def connection(self):
+        return self._connection
+
+    @classmethod
+    def commit(cls):
+        cls._connection.commit()
+
 
 if __name__ == "__main__":
-    DBConnection.get_connection()
     DBConnection.get_cursor()
+
