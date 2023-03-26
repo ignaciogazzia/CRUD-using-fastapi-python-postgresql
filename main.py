@@ -20,6 +20,10 @@ async def get_product_by_id(product_id: int):
 
 
 @app.post('/products')
-async def update_product_title(product: Product):
+async def new_product(product: Product):
+    return create_product(product)
 
-    return create_product(product.title)
+
+@app.put('/products/{product_id}')
+async def update_product(product_id: int, product_updates: Product):
+    return update_product_by_id(product_id, product_updates)
