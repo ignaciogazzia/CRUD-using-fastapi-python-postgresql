@@ -10,7 +10,7 @@ class Product(SQLModel, table=True):
 
 
 DATABASE_NAME = 'Personas'
-DATABASE_URL = f'postgresql://postgres:igna+1234@localhost:5432/{DATABASE_NAME}'
+DATABASE_URL = f'postgresql://postgres:admin@localhost:5432/{DATABASE_NAME}'
 engine = create_engine(DATABASE_URL, echo=True)
 
 
