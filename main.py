@@ -27,3 +27,8 @@ async def new_product(product: Product):
 @app.put('/products/{product_id}')
 async def update_product(product_id: int, product_updates: Product):
     return update_product_by_id(product_id, product_updates)
+
+
+@app.put('/products/{product_id}')
+async def activate_deactivate_product(product_id: int):
+    return update_is_active(product_id)
